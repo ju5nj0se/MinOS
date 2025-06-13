@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+
+
+}
+
+html {
+    background-color: white;
+}
+
+body {
+    width: 40%;
+    height: auto;
+    background-color: #242424;
+    color: white;
+    border:2px solid white;
+}
+
+ul {
+    list-style: none;
+}
+
+/*Header----------------*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    padding: 1em;
+}
+
+.--other:hover {
+    background-color: #343434;
+}
+
+.--close:hover {
+    background-color: red;
+}
+
+/*End---------------------------------*/
+/*Result--------------------*/
+.result main {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2em;
+}
+
+.result main h1 {
+    font-size: 50px;
+}
+/*End---------------------------------*/
+/*Options------------------------*/
+.container {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    height: 100px;
+    border-radius: 10px;
+    background-color:#3c3c3c ;
+    margin:2px
+}
+
+.card:hover {
+    background-color:#343434;
+    cursor: pointer;
+}
+
+.--black {
+    background-color: #343434;   
+}
+
+.--black:hover {
+    background-color:#3c3c3c ;
+    cursor: pointer;
+}
+
+.--equal {
+    background-color: #74bcec;
+    cursor: pointer;
+
+}
+
+.--equal:hover {
+    background-color: #6cacdc;
+    cursor: pointer;
+}
