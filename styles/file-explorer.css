@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Hand+Pre:wght@400..700&display=swap');
 
-/*** Variables ***/
+/*** VARIABLES ***/
 :root {
     --aside-background-color: #4a4a4a;
     --background-color-hover: #949494;
@@ -16,14 +16,16 @@
     box-sizing: border-box;
 }
 
-/*** Global styles ***/
+/*** GLOBAL STYLES ***/
 
 html {
     font-family: "Edu NSW ACT Hand Pre", cursive;
+    min-width: 320px;
 }
 
 body {
     display: flex;
+    min-width: 320px;
 }
 
 a {
@@ -41,9 +43,10 @@ aside {
     border: 1px solid #949494;
     padding: 5px;
     width: 250px;
-    height: 961px;
+    height: 100vh;
     float: left;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    min-width: 200px;
 }
 aside a {
     color: var(--font-color);
@@ -62,7 +65,8 @@ li:hover {
 main {
     background-color: var(--main-background-color);
     width: 87%;
-    height: 961px;
+    height: 100vh;
+    flex: 1;
     margin: 0;
     border: 1px solid #949494;
 }
@@ -89,12 +93,14 @@ main {
     display: flex;
     justify-content: center;
     margin: 10px;
+    flex-wrap: wrap;
 }
 .explorer-header input {
     padding: 12px;
     width: 30%;
     border: 1px solid #949494;
     border-radius: 5px;
+    min-width: 200px;
 }
 .explorer-header__icon {
     padding: 5px;
@@ -136,4 +142,72 @@ main {
     color: white;
     padding-top: 14px;
     margin-left: 150px;
+}
+
+/*** ------------- ***/
+/*** MEDIA QUERIES ***/
+/*** ------------- ***/
+
+/* TABLET */
+@media (max-width: 1024px) {
+    aside {
+        width: 200px;
+    }
+
+    main {
+        width: calc(100% - 200px);
+    }
+
+    .folder {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .recent__icon {
+        margin-left: 100px;
+    }
+}
+
+/*** HORIZONTAL MOBILE ***/
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    aside {
+        width: 100%;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+        height: auto;
+    }
+
+    .folder {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .recent__icon {
+        margin-left: 50px;
+    }
+}
+
+/*** VERTICAL MOBILE ***/
+@media (max-width: 480px) {
+    .folder {
+        grid-template-columns: 1fr;
+    }
+
+    .folder h4{
+        margin: 5px;
+        padding-top: 16px;
+    }
+
+    .explorer-header input {
+        width: 80%;
+    }
+
+    .recent__icon {
+        margin-left: 10px;
+    }
 }
