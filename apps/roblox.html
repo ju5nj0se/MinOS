@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/roblox.css">
+</head>
+
+<body>
+    <header>
+        <div class="header__icon">
+            <a href="#" class="icon__link">ROBLOX</a>
+        </div>
+        <nav>
+            <div class="nav__content-1">
+                <ul class="nav__links">
+                    <li class="nav__items"><a href="#" class="items__link">Inicio</a></li>
+                    <li class="nav__items"><a href="#" class="items__link">Tienda</a></li>
+                    <li class="nav__items"><a href="#" class="items__link">Inventario</a></li>
+                </ul>
+
+                <div class="nav__search">
+                    <input type="search" placeholder="Buscar">
+                </div>
+            </div>
+
+            <div class="nav__content-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chat-square-text" viewBox="0 0 16 16">
+                    <path
+                        d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                    <path
+                        d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gear"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 4.754a3.246 3.246 0 1 0 0 6.492 3.246 3.246 0 0 0 0-6.492M5.754 8a2.246 2.246 0 1 1 4.492 0 2.246 2.246 0 0 1-4.492 0" />
+                    <path
+                        d="M9.796 1.343c-.527-1.79-3.065-1.79-3.592 0l-.094.319a.873.873 0 0 1-1.255.52l-.292-.16c-1.64-.892-3.433.902-2.54 2.541l.159.292a.873.873 0 0 1-.52 1.255l-.319.094c-1.79.527-1.79 3.065 0 3.592l.319.094a.873.873 0 0 1 .52 1.255l-.16.292c-.892 1.64.901 3.434 2.541 2.54l.292-.159a.873.873 0 0 1 1.255.52l.094.319c.527 1.79 3.065 1.79 3.592 0l.094-.319a.873.873 0 0 1 1.255-.52l.292.16c1.64.893 3.434-.902 2.54-2.541l-.159-.292a.873.873 0 0 1 .52-1.255l.319-.094c1.79-.527 1.79-3.065 0-3.592l-.319-.094a.873.873 0 0 1-.52-1.255l.16-.292c.893-1.64-.902-3.433-2.541-2.54l-.292.159a.873.873 0 0 1-1.255-.52zm-2.633.283c.246-.835 1.428-.835 1.674 0l.094.319a1.873 1.873 0 0 0 2.693 1.115l.291-.16c.764-.415 1.6.42 1.184 1.185l-.159.292a1.873 1.873 0 0 0 1.116 2.692l.318.094c.835.246.835 1.428 0 1.674l-.319.094a1.873 1.873 0 0 0-1.115 2.693l.16.291c.415.764-.42 1.6-1.185 1.184l-.291-.159a1.873 1.873 0 0 0-2.693 1.116l-.094.318c-.246.835-1.428.835-1.674 0l-.094-.319a1.873 1.873 0 0 0-2.692-1.115l-.292.16c-.764.415-1.6-.42-1.184-1.185l.159-.291A1.873 1.873 0 0 0 1.945 8.93l-.319-.094c-.835-.246-.835-1.428 0-1.674l.319-.094A1.873 1.873 0 0 0 3.06 4.377l-.16-.292c-.415-.764.42-1.6 1.185-1.184l.292.159a1.873 1.873 0 0 0 2.692-1.115z" />
+                </svg>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile">
+            <div class="profile__img">
+                <img class="profile__photo" src="../imgs/profile.webp" alt="">
+            </div>
+            <div class="profile__name">
+                <h2 class="profile__name-modify">Sofia</h2>
+            </div>
+        </section>
+
+
+        <section class="friends">
+            <div class="friends__see-all">
+                <p class="see-all__text see-all__text-title">Friends (16)</p>
+                <a href="" class="see-all__text">See all -> </a>
+            </div>
+            <div class="firends__container">
+                <div class="friends__friend">
+                    <div class="friend__img">
+                        <img class="friend__image" src="/imgs/robloxprofile.jpeg" alt="">
+                    </div>
+                    <div class="friend__info">
+                        <div class="info__name">
+                            <p class="friend__name">Juanito</p>
+                            <p class="friend__game">Ejemplo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friends__friend">
+                    <div class="friend__img">
+                        <img class="friend__image" src="/imgs/robloxprofile.jpeg" alt="">
+                    </div>
+                    <div class="friend__info">
+                        <div class="info__name">
+                            <p class="friend__name">Juanito</p>
+                            <p class="friend__game">Ejemplo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friends__friend">
+                    <div class="friend__img">
+                        <img class="friend__image" src="/imgs/robloxprofile.jpeg" alt="">
+                    </div>
+                    <div class="friend__info">
+                        <div class="info__name">
+                            <p class="friend__name">Juanito</p>
+                            <p class="friend__game">Ejemplo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friends__friend">
+                    <div class="friend__img">
+                        <img class="friend__image" src="/imgs/robloxprofile.jpeg" alt="">
+                    </div>
+                    <div class="friend__info">
+                        <div class="info__name">
+                            <p class="friend__name">Juanito</p>
+                            <p class="friend__game">Ejemplo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="friends__friend">
+                    <div class="friend__img">
+                        <img class="friend__image" src="/imgs/robloxprofile.jpeg" alt="">
+                    </div>
+                    <div class="friend__info">
+                        <div class="info__name">
+                            <p class="friend__name">Juanito</p>
+                            <p class="friend__game">Ejemplo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommended">
+            <div class="recommended__header">
+                <p class="recommended__title">Recommended For You</p>
+            </div>
+            <div class="recommended__cards">
+                <div class="card">
+                    <div class="card__img">
+                        <a href="https://www.roblox.com/es/games/2916899287/Blackhawk-Rescue-Mission-5"
+                            target="_blank"><img src="/imgs/BRM5.jpeg" alt="" class="card__image"></a>
+                    </div>
+                    <div class="card__name">
+                        <p class="card__game-name">Blackhawk Rescue Mission 5</p>
+                        <div class="card__game-evaluation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+
+                            </svg>
+                            <p>88%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <a href="https://www.roblox.com/es/games/2916899287/Blackhawk-Rescue-Mission-5"
+                            target="_blank"><img src="/imgs/BRM5.jpeg" alt="" class="card__image"></a>
+                    </div>
+                    <div class="card__name">
+                        <p class="card__game-name">Blackhawk Rescue Mission 5</p>
+                        <div class="card__game-evaluation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+
+                            </svg>
+                            <p>88%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <a href="https://www.roblox.com/es/games/2916899287/Blackhawk-Rescue-Mission-5"
+                            target="_blank"><img src="/imgs/BRM5.jpeg" alt="" class="card__image"></a>
+                    </div>
+                    <div class="card__name">
+                        <p class="card__game-name">Blackhawk Rescue Mission 5</p>
+                        <div class="card__game-evaluation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+
+                            </svg>
+                            <p>88%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <a href="https://www.roblox.com/es/games/2916899287/Blackhawk-Rescue-Mission-5"
+                            target="_blank"><img src="/imgs/BRM5.jpeg" alt="" class="card__image"></a>
+                    </div>
+                    <div class="card__name">
+                        <p class="card__game-name">Blackhawk Rescue Mission 5</p>
+                        <div class="card__game-evaluation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+
+                            </svg>
+                            <p>88%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__img">
+                        <a href="https://www.roblox.com/es/games/2916899287/Blackhawk-Rescue-Mission-5"
+                            target="_blank"><img src="/imgs/BRM5.jpeg" alt="" class="card__image"></a>
+                    </div>
+                    <div class="card__name">
+                        <p class="card__game-name">Blackhawk Rescue Mission 5</p>
+                        <div class="card__game-evaluation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-hand-thumbs-up-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.956 1.745C7.021.81 7.908.087 8.864.325l.261.066c.463.116.874.456 1.012.965.22.816.533 2.511.062 4.51a10 10 0 0 1 .443-.051c.713-.065 1.669-.072 2.516.21.518.173.994.681 1.2 1.273.184.532.16 1.162-.234 1.733q.086.18.138.363c.077.27.113.567.113.856s-.036.586-.113.856c-.039.135-.09.273-.16.404.169.387.107.819-.003 1.148a3.2 3.2 0 0 1-.488.901c.054.152.076.312.076.465 0 .305-.089.625-.253.912C13.1 15.522 12.437 16 11.5 16H8c-.605 0-1.07-.081-1.466-.218a4.8 4.8 0 0 1-.97-.484l-.048-.03c-.504-.307-.999-.609-2.068-.722C2.682 14.464 2 13.846 2 13V9c0-.85.685-1.432 1.357-1.615.849-.232 1.574-.787 2.132-1.41.56-.627.914-1.28 1.039-1.639.199-.575.356-1.539.428-2.59z" />
+
+                            </svg>
+                            <p>88%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
